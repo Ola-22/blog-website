@@ -1,0 +1,43 @@
+.about-container{
+    display: flex;
+  
+    justify-content: center;
+
+    & .about-box{
+        width: 80%;
+        display: flex;
+        column-gap: 30px;
+        padding-top: 166px;
+        padding-bottom: 161px;
+        & div{
+            flex: 1;
+
+            & span{
+                font-size: 50px;
+                font-weight: bold;
+                margin-bottom: 25px;
+                color: #037CFF;
+
+                @media (max-width: 900px) {
+                    font-size: 25px;
+                }
+            }
+
+            & p{
+                font-size: 18px;
+                color: #868686;
+                line-height: 31px;
+                margin-bottom: 10px;
+
+                @media (max-width: 900px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @media (max-width: 900px) {
+            row-gap: 30px;
+            flex-direction: column;
+        }
+    }
+}
